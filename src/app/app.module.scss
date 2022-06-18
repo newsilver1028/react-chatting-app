@@ -1,0 +1,43 @@
+@use 'src/styles/constants/colors';
+@use 'src/styles/constants/levels';
+@use 'src/styles/mixins/flexbox';
+@use 'src/styles/mixins/position';
+
+.appWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  background-color: colors.$GRAY01;
+}
+
+.app {
+  position: relative;
+  box-sizing: border-box;
+  width: 360px;
+  height: 800px;
+  padding-top: 40px;
+  background-color: colors.$THEME;
+  border-radius: 60px;
+  transition: 300ms background-color;
+
+  .title {
+    padding-left: 40px;
+    margin: 0 0 1rem;
+    font-size: 1.5rem;
+  }
+}
+
+.scrollArea {
+  height: 572px;
+  padding: 40px;
+  overflow-y: scroll;
+  background-color: #fafbfe;
+  border-radius: 20px;
+  box-shadow: colors.$SHADOW 0 0 15px;
+
+  /* width */
+  &::-webkit-scrollbar {
+    width: 0;
+  }
+}
