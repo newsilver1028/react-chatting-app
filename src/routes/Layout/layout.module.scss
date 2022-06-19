@@ -1,14 +1,10 @@
-@use 'src/styles/constants/colors';
-@use 'src/styles/constants/levels';
-@use 'src/styles/mixins/flexbox';
-@use 'src/styles/mixins/position';
-
+/* stylelint-disable scale-unlimited/declaration-strict-value */
 .appWrapper {
   display: flex;
   align-items: center;
   justify-content: center;
   height: 100%;
-  background-color: colors.$GRAY01;
+  background-color: lightslategray;
 }
 
 .app {
@@ -17,7 +13,7 @@
   width: 360px;
   height: 800px;
   padding-top: 40px;
-  background-color: colors.$THEME;
+  background-color: transparent;
   border-radius: 60px;
   transition: 300ms background-color;
 
@@ -25,6 +21,7 @@
     padding-left: 40px;
     margin: 0 0 1rem;
     font-size: 1.5rem;
+    color: #fafbfe;
   }
 }
 
@@ -34,9 +31,7 @@
   overflow-y: scroll;
   background-color: #fafbfe;
   border-radius: 20px;
-  box-shadow: colors.$SHADOW 0 0 15px;
 
-  /* width */
   &::-webkit-scrollbar {
     width: 0;
   }

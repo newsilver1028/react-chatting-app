@@ -1,7 +1,8 @@
 {
-  "name": "health-care-app",
+  "name": "react-chatting-app",
   "version": "0.1.0",
   "private": true,
+  "main": "server.js",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
@@ -40,12 +41,17 @@
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^13.0.0",
     "@testing-library/user-event": "^13.2.1",
+    "eiows": "^4.1.2",
+    "express": "^4.18.1",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
     "react-error-boundary": "^3.1.4",
     "react-router-dom": "6",
     "react-scripts": "5.0.1",
-    "web-vitals": "^2.1.0"
+    "socket.io": "^4.5.1",
+    "socket.io-client": "^4.5.1",
+    "web-vitals": "^2.1.0",
+    "ws": "^8.8.0"
   },
   "devDependencies": {
     "@types/jest": "^27.0.1",
