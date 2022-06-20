@@ -28,8 +28,9 @@ const ChatRoom = () => {
         </button>
       </form>
       {newMessage.map(({ id, msg, userId: user }, i) => {
+        const indexValue = i;
         return (
-          <div key={`${id}${i}`}>
+          <div key={`${id}${indexValue}`}>
             <ChatMessage msg={msg} user={user} />
           </div>
         );
